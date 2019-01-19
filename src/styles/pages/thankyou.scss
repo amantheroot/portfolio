@@ -1,0 +1,30 @@
+.thankyou {
+  @extend %page;
+  @extend %pagepadding;
+  overflow: hidden;
+  & > h1 {
+    @extend %pageheading;
+  }
+  p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px;
+  }
+  .picture {
+    text-align: center;
+    margin: 50px 0 100px 0;
+    h2 {
+      font-size: 1.85rem;
+    }
+    img {
+      @media only screen and (max-width: 500px) {
+        width: 100vw;
+      }
+      width: 500px;
+    }
+  }
+
+  .thankyou__footer {
+    @extend %pagefooter;
+  }
+}

@@ -1,0 +1,19 @@
+.portfolio {
+  @extend %page;
+  @extend %pagepadding;
+  & > h1 {
+    @extend %pageheading;
+  }
+  p {
+    text-align: center;
+  }
+  .mywork {
+    text-align: center;
+    margin: 200px;
+    font-size: 3rem;
+  }
+  .portfolio__contact {
+    @extend %pagefooter;
+    grid-template-columns: auto;
+  }
+}

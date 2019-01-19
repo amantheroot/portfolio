@@ -1,0 +1,112 @@
+/*Color Theme*/
+$Color1: #393e46;
+$Color2: #00adb5;
+$Color3: #fff4e0;
+$Color4: #eb7f00;
+$Color5: #fc3c3c;
+
+/*All*/
+$PrimaryFont: "Raleway", sans-serif;
+$SecondaryFont: "Helvetica";
+$TertiaryFont: "Open Sans";
+
+$BreakingPoint: 960px;
+
+$displaysquishscale: 0.75;
+
+/*NAVIGATION*/
+$menutogglemargin: 20px;
+$menutoggleheight: 28px;
+$btnwidth: 33vw;
+
+$dummynavheight: 4.5vw;
+$dummynavheightMobile: 68px;
+
+/*HOME*/
+$transTime: 2s;
+$breakTime: 1s;
+$superbreakTime: 1s;
+$pauseTime: 0.5s;
+$changeTime: $pauseTime + 2 * $transTime + $breakTime;
+$firstDelay: $changeTime - $transTime;
+
+$squishWidth: 0.78125vw;
+
+$title1: "I'm A Front End Web Developer.";
+$title2: "I Build Websites \\ Web Applications.";
+$title3: "I Design Websites \\ Web Applications.";
+$title4: "I Still Enjoy Video Games From The 2000's.";
+$title5: "I Can Help You Build Your Next Project.";
+
+$nameskewdeg: 30;
+$namescaleY: 1.25;
+$namescale: 0.75;
+
+$Resratio: 1.5;
+
+/*ABOUT*/
+$mypicdim: 275px;
+
+/*SKILLS*/
+$introTop: 600px;
+$introScale: 0;
+$top: 200px;
+$size: 400px;
+$breaksize: 300px;
+$breakbreaksize: 200px;
+$bouncesize: 4px;
+$bounceduration: 2s;
+
+$BrainBreakingPoint: 1200px;
+$BrainFinalBreakingPoint: 600px;
+$BrainFinalFinalBreakingPoint: 475px;
+
+/*CONTACT*/
+$thewidthValue: 1.953125;
+$thewidth: $thewidthValue + 0vw;
+$FormWidth: $thewidth * 32;
+$BlockHeight: $thewidth * 12;
+$inputsmargintop: 3.90625vw;
+$barWidth: 18vw;
+$barHeight: 1.875vw;
+$barBottom: 3.90625vw;
+$ballWidth: 1.875vw;
+$bricksHeight: $thewidth * 8;
+
+$toggleGameWidth: 15.625vw;
+$toggleGameHeight: 5.859375vw;
+$toggleGameHandleWidth: 2.34375vw;
+
+:export {
+  BreakingPoint: $BreakingPoint;
+  displaysquishscale: $displaysquishscale;
+
+  thewidthValue: $thewidthValue;
+  inputsmargintop: $inputsmargintop;
+  barWidth: $barWidth;
+  barHeight: $barHeight;
+  barBottom: $barBottom;
+  ballWidth: $ballWidth;
+  bricksHeight: $bricksHeight;
+
+  nameskewdeg: $nameskewdeg;
+  namescaleY: $namescaleY;
+  namescale: $namescale;
+
+  top: $top;
+  size: $size;
+  breaksize: $breaksize;
+  breakbreaksize: $breakbreaksize;
+  BrainBreakingPoint: $BrainBreakingPoint;
+  BrainFinalBreakingPoint: $BrainFinalBreakingPoint;
+  BrainFinalFinalBreakingPoint: $BrainFinalFinalBreakingPoint;
+
+  Color1: $Color1;
+  Color2: $Color2;
+  Color3: $Color3;
+  Color4: $Color4;
+  Color5: $Color5;
+
+  dummynavheight: $dummynavheight;
+  dummynavheightMobile: $dummynavheightMobile;
+}

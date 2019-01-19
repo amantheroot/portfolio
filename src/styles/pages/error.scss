@@ -1,0 +1,55 @@
+.error {
+  @extend %page;
+  @extend %pagepadding;
+
+  text-align: center;
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    @media only screen and (max-width: $BreakingPoint) {
+      margin-top: 20px;
+      font-size: 10rem;
+    }
+    font-size: 16rem;
+    font-family: $SecondaryFont;
+    margin: 0;
+  }
+  h2:nth-child(2) {
+    @media only screen and (max-width: $BreakingPoint) {
+      font-size: 1.25rem;
+    }
+    margin: -20px 0 20px 0;
+  }
+  h2:nth-child(3) {
+    @media only screen and (max-width: $BreakingPoint) {
+      font-size: 1.75rem;
+      margin: 20px 0;
+    }
+    font-size: 2.25rem;
+    margin: 40px 0;
+    q {
+      font-family: $SecondaryFont;
+    }
+  }
+  button {
+    @media only screen and (max-width: $BreakingPoint) {
+      margin: 40px;
+      margin-top: 20px;
+      padding: 20px;
+      font-size: 1.5rem;
+    }
+    @extend %headbutton;
+    min-height: 107px;
+    margin-top: 20px;
+    color: darken($Color1, 10);
+    border-color: darken($Color1, 10);
+    &:hover {
+      color: white;
+    }
+  }
+}

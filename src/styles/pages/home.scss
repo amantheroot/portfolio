@@ -1,0 +1,187 @@
+.home {
+  @media only screen and (max-height: 37.7358490566vw) {
+    height: auto;
+  }
+  @media only screen and (max-width: $BreakingPoint) {
+    height: 100vh;
+    @media only screen and (max-height: 57.2222222222vw) {
+      height: auto;
+    }
+  }
+  @extend %pagepadding;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  color: $Color3;
+
+  background: linear-gradient(135deg, $Color1, $Color1);
+  background-size: 400% 400%;
+  animation: backgroundAnime 30s ease infinite;
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+  .hello {
+    @media only screen and (max-width: $BreakingPoint) {
+      font-size: 2.25vw * $Resratio;
+      margin-bottom: 1.25vw * $Resratio;
+    }
+    cursor: default;
+    font-size: 2.25vw;
+    margin-bottom: 1.25vw;
+  }
+  .name {
+    @media only screen and (max-width: $BreakingPoint) {
+      font-size: 5.75vw * $Resratio;
+    }
+    color: $Color4;
+    font-size: 5.75vw;
+    font-family: $SecondaryFont;
+    font-weight: bold;
+    user-select: none;
+    div {
+      display: inline-block;
+    }
+    .fname,
+    .lname {
+      @media only screen and (max-width: $BreakingPoint) {
+        margin: 0 1.5625vw * $Resratio;
+      }
+      margin: 0 1.5625vw;
+    }
+    & > div > div {
+      cursor: pointer;
+      transform: scale(0.75);
+      transition: transform 0.25s;
+    }
+  }
+
+  .title {
+    @media only screen and (max-width: $BreakingPoint) {
+      margin: 1.25vw * $Resratio 0 3.75vw * $Resratio 0;
+      font-size: 3.25vw * $Resratio;
+    }
+    margin: 1.25vw 0 3.75vw 0;
+    font-size: 3.25vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+    animation: squish $transTime $firstDelay linear forwards,
+      squishTitle $changeTime $changeTime linear infinite;
+  }
+  .title::after {
+    content: "I'm A Front End Web Developer";
+    animation: changeTitleText $changeTime * 5 linear infinite;
+  }
+
+  button {
+    @media only screen and (max-width: $BreakingPoint) {
+      border: 0.15625vw * $Resratio solid;
+      font-size: 1.9vw * $Resratio;
+      padding: 1.25vw * $Resratio 1.875vw * $Resratio;
+    }
+    color: $Color3;
+    outline: none;
+    border-radius: 0;
+    border: 0.15625vw solid;
+    background-color: transparent;
+    font-size: 1.9vw;
+    font-family: $PrimaryFont;
+    padding: 1.25vw 1.875vw;
+    transition: border-color 0.5s ease, background-color 0.5s ease;
+
+    &:nth-child(6) {
+      @media only screen and (max-width: $BreakingPoint) {
+        font-size: 1.3vw * $Resratio;
+        padding: 1.25vw * $Resratio;
+      }
+      font-size: 1.3vw;
+      padding: 1.25vw;
+    }
+
+    &:hover {
+      border-color: $Color4;
+      background-color: $Color4;
+    }
+  }
+  h2 {
+    @media only screen and (max-width: $BreakingPoint) {
+      font-size: 1.6vw * $Resratio;
+    }
+    cursor: default;
+    font-size: 1.6vw;
+  }
+}
+
+@keyframes changeTitleText {
+  0% {
+    content: $title1;
+  }
+  19.999999% {
+    content: $title1;
+  }
+  20% {
+    content: $title2;
+  }
+  39.999999% {
+    content: $title2;
+  }
+  40% {
+    content: $title3;
+  }
+  59.999999% {
+    content: $title3;
+  }
+  60% {
+    content: $title4;
+  }
+  79.999999% {
+    content: $title4;
+  }
+  80% {
+    content: $title5;
+  }
+  100% {
+    content: $title5;
+  }
+}
+
+@keyframes squish {
+  from {
+    width: 100%;
+  }
+  to {
+    width: $squishWidth;
+  }
+}
+@keyframes squishTitle {
+  0% {
+    width: $squishWidth;
+  }
+  10% {
+    width: $squishWidth;
+  }
+  40% {
+    width: 100%;
+  }
+  70% {
+    width: 100%;
+  }
+  100% {
+    width: $squishWidth;
+  }
+}
+@keyframes backgroundAnime {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

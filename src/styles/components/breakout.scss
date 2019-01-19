@@ -1,0 +1,130 @@
+.breakout {
+  margin-top: -20px;
+  form {
+    overflow-y: hidden;
+    background-color: black;
+    .gamearea {
+      height: 100%;
+      overflow: hidden;
+    }
+    .input__block {
+      height: $bricksHeight; // Responsive
+      textarea {
+        width: 100%;
+        border-radius: 0;
+        color: white;
+        background-color: white;
+        border-color: white;
+        animation: Dissapear 0s 1s forwards;
+        &::placeholder {
+          color: white;
+        }
+      }
+      .block {
+        z-index: 1;
+        animation: Appear 0s 1s forwards;
+        .brick {
+          @for $num from 1 through (14 * 6) {
+            $delay: 1s;
+            &:nth-child(#{$num}) {
+              animation: brickentry 0.5s $delay forwards;
+            }
+            @if ($num > 14) {
+              $delay: 1.4s;
+              &:nth-child(#{$num}) {
+                animation: brickentry 0.5s $delay forwards;
+              }
+            }
+            @if ($num > (14 * 2)) {
+              $delay: 1.8s;
+              &:nth-child(#{$num}) {
+                animation: brickentry 0.5s $delay forwards;
+              }
+            }
+            @if ($num > (14 * 3)) {
+              $delay: 2.2s;
+              &:nth-child(#{$num}) {
+                animation: brickentry 0.5s $delay forwards;
+              }
+            }
+            @if ($num > (14 * 4)) {
+              $delay: 2.6s;
+              &:nth-child(#{$num}) {
+                animation: brickentry 0.5s $delay forwards;
+              }
+            }
+            @if ($num > (14 * 5)) {
+              $delay: 3s;
+              &:nth-child(#{$num}) {
+                animation: brickentry 0.5s $delay forwards;
+              }
+            }
+          }
+        }
+      }
+    }
+    .input__bar {
+      bottom: $barBottom; // Responsive
+      height: $barHeight; // Responsive
+      button {
+        width: $barWidth; // Responsive
+        border-radius: 0;
+        border: 0;
+        background-color: #c64747;
+        color: #c64747;
+        animation: Dissapear 0s 1s forwards linear;
+      }
+      .bar {
+        z-index: 1;
+        animation: Appear 0s 1s forwards;
+      }
+    }
+  }
+  .toggleGame {
+    transition: top 1s ease, transform 0.5s linear;
+    top: 0;
+    z-index: 99;
+    transform: translateX(100%);
+    button:nth-child(2),
+    .toggleGame__handle {
+      transition: opacity 0.5s 1s ease;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    button:nth-child(2) {
+      transition: opacity 0.5s 1s ease, background-color 0.5s ease;
+    }
+  }
+}
+@keyframes Dissapear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes Appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes brickentry {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+@keyframes begoneblock {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: black;
+  }
+}

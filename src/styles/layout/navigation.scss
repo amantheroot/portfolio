@@ -1,0 +1,254 @@
+.navigation {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  nav {
+    @media only screen and (max-width: $BreakingPoint) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    background-color: rgba(darken($Color1, 15), 1);
+    color: $Color3;
+    position: relative;
+    transition: background-color 1s ease;
+    &.navgt {
+      background-color: transparent;
+    }
+    .nav__title {
+      @media only screen and (max-width: $BreakingPoint) {
+        position: static;
+        transform: translateX(0%);
+        margin-left: $menutogglemargin;
+      }
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      top: 0;
+      margin-top: 0;
+      user-select: none;
+      transition: margin 0.5s ease, font-size 0.5s ease;
+      h1 {
+        @media only screen and (max-width: $BreakingPoint) {
+          font-size: 1.5rem;
+        }
+        cursor: default;
+        margin: 0;
+        font-size: 2vw;
+        transition: font-size 0.5s ease;
+      }
+      &.nav__titlegt {
+        @media only screen and (max-width: $BreakingPoint) {
+          margin-left: 50%;
+          transform: translateX(-50%);
+        }
+        margin: 0.78125vw;
+        h1 {
+          font-size: 2.5vw;
+        }
+      }
+    }
+    .nav__container {
+      @media only screen and (max-width: $BreakingPoint) {
+        opacity: 0;
+        position: fixed;
+        top: -100vh;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        padding-top: $menutoggleheight + 2 * $menutogglemargin;
+        z-index: -1;
+        background-color: darken($Color1, 15);
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+        transform: translateY(0%);
+        transition: transform 0.5s ease, opacity 0s 0.5s;
+      }
+      display: flex;
+      justify-content: space-between;
+      transition: opacity 1s ease;
+      & > div {
+        @media only screen and (max-width: $BreakingPoint) {
+          margin: 0;
+        }
+        margin: 0.8vw;
+      }
+      .nav__buttons {
+        @media only screen and (max-width: $BreakingPoint) {
+          display: flex;
+          flex-flow: column;
+        }
+        width: $btnwidth;
+        display: grid;
+        grid-template-columns: $btnwidth / 4 $btnwidth / 4 $btnwidth / 4 $btnwidth / 4;
+        grid-auto-rows: auto;
+        grid-column-gap: 0.8vw;
+        .button {
+          @media only screen and (max-width: $BreakingPoint) {
+            margin: 10px;
+          }
+          display: flex;
+          justify-content: center;
+          button {
+            @media only screen and (max-width: $BreakingPoint) {
+              font-size: 1.25rem;
+            }
+            outline: none;
+            border: none;
+            background-color: transparent;
+            color: $Color3;
+            font-size: 1.24vw;
+            font-family: $PrimaryFont;
+            padding: 0.8vw 0;
+            transition: 0.25s ease;
+            text-align: center;
+            position: relative;
+            white-space: nowrap;
+            &::after,
+            &::before {
+              content: "";
+              background-color: $Color3;
+              position: absolute;
+              height: 2px;
+              width: 100%;
+              transform: scaleX(0);
+              transition: transform 0.5s ease;
+            }
+            &::before {
+              top: 0;
+            }
+            &::after {
+              bottom: 0;
+              left: 0;
+            }
+            &:hover,
+            &.active {
+              letter-spacing: 0.4vw;
+              text-shadow: 1px 1px 3px $Color3;
+              &::before,
+              &::after {
+                transform: scaleX(1.05);
+              }
+            }
+            &.active {
+              color: $Color4;
+              text-shadow: 1px 1px 3px $Color4;
+              &::after,
+              &::before {
+                background-color: $Color4;
+              }
+            }
+          }
+        }
+      }
+      .social__links {
+        display: flex;
+        align-items: center;
+        a {
+          @media only screen and (max-width: $BreakingPoint) {
+            font-size: 1.75rem;
+            margin: 0 10px;
+          }
+          color: $Color3;
+          font-size: 2vw;
+          margin: 0 0.6vw;
+          transition: 0.25s ease;
+          &:hover {
+            transform: scale(1.5);
+          }
+          &:nth-child(1):hover {
+            color: #0077b5;
+          }
+          &:nth-child(2):hover {
+            color: #38a1f3;
+          }
+          &:nth-child(3):hover {
+            color: #333333;
+          }
+          &:nth-child(4):hover {
+            color: #fbbc05;
+          }
+        }
+      }
+    }
+    .linkstoggled {
+      opacity: 1;
+      transition: transform 0.5s ease, opacity 0s;
+      transform: translateY(100%);
+    }
+    .nav__menutoggle {
+      @media only screen and (max-width: $BreakingPoint) {
+        display: flex;
+      }
+      margin: $menutogglemargin;
+      height: $menutoggleheight;
+      width: 35px;
+      cursor: pointer;
+      display: none;
+      flex-flow: column;
+      justify-content: center;
+      transition: transform 0.25s ease, opacity 1s ease;
+
+      .nav__menubar {
+        background-color: $Color3;
+        position: relative;
+        width: 100%;
+        height: 2px;
+        transition: background-color 0s 0.25s;
+
+        &::after,
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: $Color3;
+          width: 100%;
+          height: 100%;
+          transition: margin 0.25s ease, top 0.25s 0.25s ease, transform 0.25s;
+        }
+        &::after {
+          top: 13px;
+        }
+        &::before {
+          top: -13px;
+        }
+      }
+      &:hover {
+        .nav__menubar::after {
+          margin-top: 3px;
+        }
+        .nav__menubar::before {
+          margin-top: -3px;
+        }
+      }
+
+      &.toggled {
+        .nav__menubar {
+          background-color: transparent;
+          &::after,
+          &::before {
+            top: 0px;
+            transition: margin 0.25s ease, top 0.25s ease, transform 0.25s 0.25s;
+          }
+          &::after {
+            transform: rotate(45deg);
+          }
+          &::before {
+            transform: rotate(-45deg);
+          }
+        }
+        &:hover {
+          transform: scale(1.25);
+          .nav__menubar::after,
+          .nav__menubar::before {
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+  }
+}

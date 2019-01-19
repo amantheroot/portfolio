@@ -1,0 +1,294 @@
+.form {
+  position: relative;
+  overflow: hidden;
+  transition: margin 1s ease;
+  form {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    transition: background-color 1s ease;
+    input,
+    textarea,
+    button {
+      color: darken($Color1, 10);
+      outline: none;
+      border: 0.234375vw solid darken($Color1, 10);
+    }
+    textarea {
+      vertical-align: top;
+    }
+    .inputs {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      grid-gap: $thewidth * 2;
+      padding: $thewidth * 2 0;
+      margin-top: $inputsmargintop; // Responsive
+      height: $BlockHeight;
+      width: $FormWidth;
+      @extend %center;
+      input {
+        padding-left: 1.5625vw;
+        font-size: 1.75vw;
+        &:nth-child(5) {
+          font-size: 1.5vw;
+          &::placeholder {
+            font-size: 1.75vw;
+          }
+        }
+      }
+    }
+    .gamearea {
+      position: relative;
+      height: $thewidth * 17;
+      transition: 1s ease;
+      overflow: hidden;
+    }
+    .input__block {
+      position: absolute;
+      top: 0;
+      height: $BlockHeight;
+      width: 100%;
+      transition: 1s ease;
+      textarea {
+        width: $FormWidth;
+        height: 100%;
+        font-size: 1.5vw;
+        padding: 1.5625vw;
+        transition: 1s;
+        resize: none;
+        &::placeholder {
+          transition: color 1s ease;
+        }
+        @extend %center;
+      }
+      .block {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        opacity: 0;
+        z-index: -1;
+        transition: 1s ease;
+        display: grid;
+        grid-template-columns: repeat(14, auto);
+        grid-template-rows: repeat(6, auto);
+        .brick {
+          height: 0;
+          transition: background-color 1s ease;
+          @for $num from 1 through (14 * 6) {
+            &:nth-child(#{$num}) {
+              background-color: #c84848;
+            }
+            @if ($num > 14) {
+              &:nth-child(#{$num}) {
+                background-color: #c66c3a;
+              }
+            }
+            @if ($num > (14 * 2)) {
+              &:nth-child(#{$num}) {
+                background-color: #b47a30;
+              }
+            }
+            @if ($num > (14 * 3)) {
+              &:nth-child(#{$num}) {
+                background-color: #a2a22a;
+              }
+            }
+            @if ($num > (14 * 4)) {
+              &:nth-child(#{$num}) {
+                background-color: #46a049;
+              }
+            }
+            @if ($num > (14 * 5)) {
+              &:nth-child(#{$num}) {
+                background-color: #4147c6;
+              }
+            }
+          }
+        }
+        .bricktrans {
+          @for $num from 1 through (14 * 6) {
+            &:nth-child(#{$num}) {
+              background-color: white;
+            }
+          }
+        }
+        .dead {
+          opacity: 0;
+        }
+      }
+    }
+    .msg {
+      position: absolute;
+      width: 100%;
+      top: 40%;
+      text-align: center;
+      color: white;
+      opacity: 0;
+      transition: opacity 1s ease;
+      h1 {
+        font-size: 4vw; //Responsive
+      }
+      .heading {
+        h1 {
+          margin-bottom: 0;
+        }
+        p {
+          font-size: 1.25vw; //Responsive
+        }
+        margin-bottom: 3.125vw; //Responsive
+      }
+
+      .buttons {
+        button {
+          padding: 1.6vw; //Responsive
+          margin: 0 1.6vw; //Responsive
+          font-size: 1.5vw; //Responsive
+          font-weight: bolder;
+          border: 0.15625vw solid white;
+          color: white;
+          background-color: black;
+          transition: 1s ease;
+          &:focus {
+            outline: none;
+          }
+          &:hover {
+            cursor: pointer;
+            border-color: black;
+            color: black;
+            background-color: white;
+          }
+        }
+      }
+      &:hover {
+        cursor: default;
+      }
+    }
+    .stats {
+      color: white;
+      display: none;
+      opacity: 0;
+      transition: opacity 1s ease;
+      h1 {
+        margin: 1vw; //Responsive
+        display: inline-block;
+        font-size: 4vw; //Responsive
+      }
+      .score-stat {
+        float: right;
+        margin-right: $toggleGameHandleWidth;
+      }
+      &:hover {
+        cursor: default;
+      }
+    }
+    .ball {
+      position: absolute;
+      height: $ballWidth; //Responsive
+      width: $ballWidth; //Responsive
+      opacity: 0;
+      transform: translate(-50%, -50%);
+      background-color: #484eda;
+    }
+    .input__bar {
+      position: absolute;
+      height: $thewidth * 3;
+      width: 100%;
+      bottom: 0;
+      transition: 1s ease;
+      button {
+        color: darken($Color1, 10);
+        background-color: lighten($Color4, 25);
+        font-family: $PrimaryFont;
+        width: $FormWidth;
+        height: 100%;
+        font-size: 1.75vw;
+        transition: 1s ease;
+        @extend %center;
+        &:hover {
+          cursor: pointer;
+          letter-spacing: 0.5vw;
+          background-color: $Color4;
+        }
+      }
+      .bar {
+        height: 100%;
+        width: $barWidth; //Responsive
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 1s ease;
+        background-color: #c64747;
+        z-index: -1;
+      }
+    }
+  }
+  .toggleGame {
+    @media only screen and (max-width: $BreakingPoint) {
+      top: $dummynavheightMobile;
+    }
+    z-index: 2;
+    position: fixed;
+    top: $dummynavheight;
+    right: 0;
+    transform: translateX(0%);
+    transition: transform 0.5s linear;
+    &:hover {
+      transform: translateX(0%);
+    }
+    button {
+      width: $toggleGameWidth;
+      border: none;
+      outline: none;
+      color: white;
+      transition: background-color 0.5s ease, text-shadow 0.5s ease;
+      &:nth-child(1) {
+        height: ($toggleGameHeight / 10) * 6.5;
+        background-color: $Color5;
+        font-size: 1.1vw;
+        &:hover {
+          background-color: darken($Color5, 20);
+          text-shadow: 0.078125vw 0.078125vw 0.390625vw white;
+        }
+        &:disabled {
+          background-color: darken($Color5, 40);
+          &:hover {
+            text-shadow: none;
+          }
+        }
+      }
+      &:nth-child(2) {
+        border-top: 0.078125vw solid $Color1;
+        display: block;
+        height: ($toggleGameHeight / 10) * 3.5;
+        background-color: $Color2;
+        font-size: 1.25vw;
+        &:hover {
+          background-color: darken($Color2, 5);
+        }
+        @extend %toggleGameHidden;
+      }
+    }
+    .toggleGame__handle {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: $toggleGameHeight;
+      width: $toggleGameHandleWidth;
+      transform: translateX(-100%);
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        color: black;
+        font-size: 1.7vw;
+        transition: font-size 0.25s ease;
+      }
+      @extend %toggleGameHidden;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $PrimaryFont;
+  width: 100%;
+  height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+%pagepadding {
+  padding-top: $dummynavheight;
+  @media only screen and (max-width: $BreakingPoint) {
+    padding-top: $dummynavheightMobile;
+  }
+}
+
+%pageheading {
+  font-size: 2.25rem;
+  font-weight: bolder;
+  word-spacing: 8px;
+  display: inline-block;
+  margin: 60px 0 30px 50%;
+  transform: translateX(-50%);
+  position: relative;
+  white-space: nowrap;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    transform: scaleX(1);
+    background-color: $Color1;
+  }
+}
+
+%headbutton {
+  margin: 50px;
+  margin-top: 0;
+  outline: none;
+  border: 5px solid $Color3;
+  color: $Color3;
+  background-color: transparent;
+  font-size: 2rem;
+  font-family: $PrimaryFont;
+  font-weight: bold;
+  padding: 30px;
+  transition: 0.5s ease;
+  &:hover {
+    border-color: $Color4;
+    background-color: $Color4;
+  }
+}
+%center {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+%pagefooter {
+  @media only screen and (max-width: $BreakingPoint) {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+  color: $Color3;
+  background-color: darken($Color1, 10);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  h1 {
+    text-align: center;
+    margin: 30px;
+    font-size: 2.25rem;
+  }
+  & > div {
+    display: flex;
+    flex-flow: column;
+  }
+  button {
+    @extend %headbutton;
+  }
+}
+%page {
+  background-color: lighten($Color3, 4);
+  color: darken($Color1, 4);
+}
+%toggleGameHidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}

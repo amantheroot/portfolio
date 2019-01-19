@@ -1,0 +1,310 @@
+.skills {
+  @media only screen and (max-width: $BrainBreakingPoint) {
+    height: auto;
+  }
+  position: relative;
+  height: 720px + $dummynavheightMobile;
+  overflow: hidden;
+  margin-bottom: 100px;
+  .brain {
+    @media only screen and (max-width: $BrainBreakingPoint) {
+      position: static;
+    }
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    .brain__template,
+    .brain__parts {
+      @media only screen and (max-width: $BrainFinalBreakingPoint) {
+        height: $breaksize;
+      }
+      @media only screen and (max-width: $BrainFinalFinalBreakingPoint) {
+        height: $breakbreaksize;
+      }
+      z-index: 1;
+      position: absolute;
+      top: $introTop;
+      height: $size;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      transition: margin 0.5s, top 1s, transform 1s;
+      transform: scale($introScale);
+      .brain__template--svg {
+        height: 100%;
+      }
+      .brain__parts--svg {
+        path:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .brain__updown {
+      animation: updown $bounceduration linear infinite forwards;
+    }
+    .brain__parts {
+      z-index: 0;
+    }
+    .skills__info {
+      @media only screen and (max-width: $BrainBreakingPoint) {
+        position: static;
+      }
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      .info {
+        @media only screen and (max-width: $BrainBreakingPoint) {
+          position: static;
+        }
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        [class^="info"] {
+          position: absolute;
+          h1 {
+            text-align: center;
+          }
+        }
+        .info__centres {
+          width: 100%;
+          top: $top;
+          height: $size;
+          & > div {
+            top: 50%;
+            left: 50%;
+            height: 0;
+            width: 0;
+          }
+          .info__centre--lt {
+            @media only screen and (max-width: $BrainFinalBreakingPoint) {
+              top: 10%;
+              margin-left: -60px;
+            }
+            @media only screen and (max-width: $BrainFinalFinalBreakingPoint) {
+              top: 8%;
+              margin-left: -45px;
+            }
+            top: 15%;
+            margin-left: -90px;
+          }
+          .info__centre--rt {
+            @media only screen and (max-width: $BrainFinalBreakingPoint) {
+              margin-left: 40px;
+            }
+            @media only screen and (max-width: $BrainFinalFinalBreakingPoint) {
+              top: 7%;
+              margin-left: 24px;
+            }
+            top: 10%;
+            margin-left: 51px;
+          }
+          .info__centre--lm {
+            @media only screen and (max-width: $BrainFinalBreakingPoint) {
+              top: 40%;
+              margin-left: -100px;
+            }
+            @media only screen and (max-width: $BrainFinalFinalBreakingPoint) {
+              top: 27%;
+              margin-left: -75px;
+            }
+            top: 55%;
+            margin-left: -154px;
+          }
+          .info__centre--rm {
+            @media only screen and (max-width: $BrainFinalBreakingPoint) {
+              top: 40%;
+              margin-left: 90px;
+            }
+            @media only screen and (max-width: $BrainFinalFinalBreakingPoint) {
+              top: 27%;
+              margin-left: 65px;
+            }
+            top: 55%;
+            margin-left: 154px;
+          }
+          .info__centre--lb {
+            @media only screen and (max-width: $BrainFinalBreakingPoint) {
+              top: 60%;
+              margin-left: -60px;
+            }
+            @media only screen and (max-width: $BrainFinalFinalBreakingPoint) {
+              top: 39%;
+              margin-left: -40px;
+            }
+            top: 82%;
+            margin-left: -90px;
+          }
+          .info__centre--rb {
+            @media only screen and (max-width: $BrainFinalBreakingPoint) {
+              top: 60%;
+              margin-left: 55px;
+            }
+            @media only screen and (max-width: $BrainFinalFinalBreakingPoint) {
+              top: 39%;
+              margin-left: 35px;
+            }
+            top: 82%;
+            margin-left: 90px;
+          }
+          .info__pseudocentre--lt {
+            @media only screen and (max-width: $BrainFinalBreakingPoint) {
+              margin-left: -200px;
+            }
+            @media only screen and (max-width: $BrainFinalFinalBreakingPoint) {
+              top: 0%;
+              margin-left: -130px;
+            }
+            top: 5%;
+            margin-left: -260px;
+          }
+          .info__pseudocentre--rt {
+            @media only screen and (max-width: $BrainFinalBreakingPoint) {
+              margin-left: 195px;
+            }
+            @media only screen and (max-width: $BrainFinalFinalBreakingPoint) {
+              margin-left: 130px;
+            }
+            top: 0%;
+            margin-left: 255px;
+          }
+          .info__pseudocentre--lm {
+            @media only screen and (max-width: $BrainFinalBreakingPoint) {
+              top: 37%;
+              margin-left: -210px;
+            }
+            @media only screen and (max-width: $BrainFinalFinalBreakingPoint) {
+              top: 25%;
+              margin-left: -147px;
+            }
+            top: 55%;
+            margin-left: -260px;
+          }
+          .info__pseudocentre--rm {
+            @media only screen and (max-width: $BrainFinalBreakingPoint) {
+              top: 37%;
+              margin-left: 210px;
+            }
+            @media only screen and (max-width: $BrainFinalFinalBreakingPoint) {
+              top: 25%;
+              margin-left: 147px;
+            }
+            top: 55%;
+            margin-left: 260px;
+          }
+          .info__pseudocentre--lb {
+            @media only screen and (max-width: $BrainFinalBreakingPoint) {
+              top: 60%;
+              margin-left: -225px;
+            }
+            @media only screen and (max-width: $BrainFinalFinalBreakingPoint) {
+              top: 45%;
+              margin-left: -155px;
+            }
+            top: 82%;
+            margin-left: -265px;
+          }
+          .info__pseudocentre--rb {
+            @media only screen and (max-width: $BrainFinalBreakingPoint) {
+              top: 60%;
+              margin-left: 225px;
+            }
+            @media only screen and (max-width: $BrainFinalFinalBreakingPoint) {
+              top: 45%;
+              margin-left: 155px;
+            }
+            top: 82%;
+            margin-left: 265px;
+          }
+        }
+        .info__canvas {
+          position: absolute;
+          top: 0;
+          min-height: 100%;
+          width: 100%;
+
+          opacity: 0;
+          transition: opacity 0.7s;
+        }
+        .info__empty {
+          @media only screen and (max-width: $BrainBreakingPoint) {
+            display: block;
+          }
+          @media only screen and (max-width: $BrainFinalBreakingPoint) {
+            height: 600px;
+          }
+          @media only screen and (max-width: $BrainFinalFinalBreakingPoint) {
+            height: 500px;
+          }
+          display: none;
+          position: static;
+          height: 700px;
+          width: 100%;
+        }
+        [class*="info__bp"] {
+          width: 275px;
+          font-size: 1rem;
+          padding: 10px;
+          opacity: 0;
+          transition: opacity 0.7s;
+          left: 50%;
+          cursor: pointer;
+          h1 {
+            font-size: 1.4rem;
+          }
+          h2 {
+            font-size: 1.05rem;
+          }
+        }
+        .info__bp1 {
+          top: 10%;
+          margin-left: -512px;
+        }
+        .info__bp2 {
+          top: 10%;
+          margin-left: 256px;
+        }
+        .info__bp3 {
+          top: 40%;
+          margin-left: -576px;
+        }
+        .info__bp4 {
+          top: 40%;
+          margin-left: 320px;
+        }
+        .info__bp5 {
+          top: 75%;
+          margin-left: -486px;
+        }
+        .info__bp6 {
+          top: 75%;
+          margin-left: 256px;
+        }
+        [class*="info__bp"] {
+          @media only screen and (max-width: $BrainBreakingPoint) {
+            position: static;
+            margin-left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes updown {
+  0% {
+    margin-top: 0px;
+  }
+  25% {
+    margin-top: -$bouncesize;
+  }
+  50% {
+    margin-top: 0px;
+  }
+  75% {
+    margin-top: $bouncesize;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}

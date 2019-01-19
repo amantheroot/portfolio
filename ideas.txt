@@ -1,0 +1,72 @@
+Protfolio Webiste
+- A Button Which turns the input form into a Game Of Breakout *
+
+- An Image of brain showing the skills I have *
+- A Picture Of Me but just the head from which the brain will come out *
+
+- A Custom Logo And Tagline *
+
+- About Me *
+
+- Showing Why Websites are important and how they can improve a business *
+
+- 3 Projects Minimum (Restaurant, LawFirm, Doctors, Own) - III
+- Get Testimonials (matbe Mazhar Bhaijaan and Junaid Bhai) - IV
+
+- A contact page *
+- Send An Email to me when the form is filled *
+
+- Social Icon Links *
+
+- A 404 page *
+
+- Have Animation for transitions *
+
+- A SPA if possible *
+- Have CTA At The Beggining *
+- Not Many Clicks Required *
+- Mobile Friendly (must) - II
+
+- Made With React *
+
+- Keeping it short (Like A Book Flip) *
+- Get Inspired from other Websites *
+- Be Me *
+
+- Style The Fuck Out Of It - I
+
+THE MESSAGE -
+"I am a fun Web Developer to make you websites. 
+I am friendly, light, funny. But I do have the skills.
+My Work Looks Professional. Call Me"
+
+Technologies -
+HTML *
+CSS *
+JS *
+SASS *
+BEM *
+ES6 *
+Service Workers
+REACT *
+Redux *
+Responsive Design
+Unit Testing
+
+
+TODO - 
+Thank You Style *
+Error Style *
+Loading *
+Contact Style *
+SEO *
+Copyright Footer *
+Toggle Game Style *
+Service Workers *
+Fix Game For Mobile *
+Icon *
+Serverside Rendering
+
+// My Pic
+// My Work
+// Site Map
