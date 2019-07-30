@@ -44,10 +44,29 @@
       margin-bottom: 60px;
     }
   }
-  .about__me + h2 {
+  & > h2 {
     text-align: center;
     font-size: 2.25rem;
     margin-top: 100px;
+  }
+  .about__resume {
+    margin: 100px 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    outline: none;
+    border: 5px solid $Color1;
+    color: $Color1;
+    background-color: transparent;
+    font-size: 2rem;
+    font-family: $PrimaryFont;
+    font-weight: bold;
+    padding: 30px;
+    transition: 0.5s ease;
+    &:hover {
+      color: $Color3;
+      border-color: $Color2;
+      background-color: $Color2;
+    }
   }
   .about__footer {
     @extend %pagefooter;
