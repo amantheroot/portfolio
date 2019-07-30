@@ -13,9 +13,9 @@ class ThankYou extends Component {
         <Helmet>
           <meta
             name="description"
-            content="Thank You From Aman Kumar, A Front End React Web Developer based in Hyderabad, India."
+            content="Thank You From Aman Kumar, A Full Stack ReactJS and NodeJS Web Developer based in Hyderabad, India."
           />
-          <title>Thank You | Aman Kumar</title>
+          <title>Thank You | Aman Kumar | Full Stack Web Developer</title>
         </Helmet>
         <h1>Thank You!</h1>
         <p>

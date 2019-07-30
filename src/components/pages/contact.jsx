@@ -55,9 +55,9 @@ class Contact extends Component {
         <Helmet>
           <meta
             name="description"
-            content="Contact Aman Kumar, A Front End React Web Developer based in Hyderabad, India. Let's Talk or you can also play atari breakout game online."
+            content="Contact Aman Kumar, A Full Stack ReactJS and NodeJS Web Developer based in Hyderabad, India. Let's Talk or you can also play atari breakout game online."
           />
-          <title>Let's Talk | Aman Kumar | Front End Web Developer</title>
+          <title>Let's Talk | Aman Kumar | Full Stack Web Developer</title>
         </Helmet>
         <h1>Let's Talk</h1>
         <Form ongameToggled={this.gameToggle} />

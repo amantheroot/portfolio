@@ -9,9 +9,9 @@ class Error extends Component {
         <Helmet>
           <meta
             name="description"
-            content="404 Error Page of Aman Kumar, A Front End React Web Developer based in Hyderabad, India."
+            content="404 Error Page of Aman Kumar, A Full Stack ReactJS and NodeJS Web Developer based in Hyderabad, India."
           />
-          <title>Your Lost | Aman Kumar</title>
+          <title>Your Lost | Aman Kumar | Full Stack Web Developer</title>
         </Helmet>
         <h1>404</h1>
         <h2>Curious One Aren't You ;)</h2>

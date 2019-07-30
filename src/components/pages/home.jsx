@@ -49,9 +49,9 @@ class Home extends Component {
         <Helmet>
           <meta
             name="description"
-            content="Aman Kumar, A Front End React Web Developer based in Hyderabad, India. Let me help you build your next project."
+            content="Aman Kumar, A Full Stack ReactJS and NodeJS Web Developer based in Hyderabad, India. Let me help you build your next project."
           />
-          <title>Aman Kumar | Front End Web Developer</title>
+          <title>Aman Kumar | Full Stack Web Developer</title>
         </Helmet>
         <h1 className="hello">Hello, my name is</h1>
         <h1 ref="name" className="name">

@@ -105,9 +105,9 @@ class ToConnectAbout extends Component {
         <Helmet>
           <meta
             name="description"
-            content="About Aman Kumar, A Front End React Web Developer based in Hyderabad, India."
+            content="About Aman Kumar, A Full Stack ReactJS and NodeJS Web Developer based in Hyderabad, India."
           />
-          <title>About Me | Aman Kumar | Front End Web Developer</title>
+          <title>About Me | Aman Kumar | Full Stack Web Developer</title>
         </Helmet>
         <div className="about__me">
           <h1>ABOUT ME</h1>

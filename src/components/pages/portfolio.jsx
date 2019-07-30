@@ -11,9 +11,9 @@ class Portfolio extends Component {
         <Helmet>
           <meta
             name="description"
-            content="Work of Aman Kumar, A Front End React Web Developer based in Hyderabad, India."
+            content="Work of Aman Kumar, A Full Stack ReactJS and NodeJS Web Developer based in Hyderabad, India."
           />
-          <title>My Work | Aman Kumar | Front End Web Developer</title>
+          <title>My Work | Aman Kumar | Full Stack Web Developer</title>
         </Helmet>
         <h1>MY WORK</h1>
         <p>(and what you're actually here for...)</p>
