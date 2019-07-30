@@ -17,9 +17,9 @@ class Portfolio extends Component {
         </Helmet>
         <h1>MY WORK</h1>
         <p>(and what you're actually here for...)</p>
-        {/* <div className="mywork">
+        <div className="mywork">
           <h1>Coming Soon...</h1>
-        </div> */}
+        </div>
         <div className="portfolio__contact">
           <div>
             <h1>Now, Would You Please?</h1>
