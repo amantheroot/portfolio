@@ -2,6 +2,7 @@
   "name": "portfolio_website",
   "version": "0.1.0",
   "private": true,
+  "description": "Aman Kumar's portfolio",
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
     "@babel/preset-env": "^7.2.3",
@@ -11,6 +12,7 @@
     "compression": "^1.7.3",
     "cookie-parser": "^1.4.3",
     "express": "^4.16.4",
+    "gh-pages": "^2.0.1",
     "ignore-styles": "^5.0.1",
     "md5-file": "^4.0.0",
     "morgan": "^1.9.1",
@@ -29,11 +31,25 @@
     "redux-thunk": "^2.3.0",
     "sw-precache": "^5.2.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amantheroot/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Aman Kumar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amantheroot/portfolio/issues"
+  },
+  "homepage": "https://amantheroot.github.io/portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
