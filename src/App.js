@@ -219,7 +219,7 @@ class ToConnectApp extends Component {
   render() {
     return (
       <div className="App">
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <div ref="display" className="display">
             <RoutedNavigation navigate={this.navigate} />
             <Switch>
