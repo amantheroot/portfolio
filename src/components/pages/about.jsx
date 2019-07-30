@@ -120,11 +120,10 @@ class ToConnectAbout extends Component {
           <p>
             Unless you've directly landed here skipping the homepage my name is
             Aman Kumar (Pronounced <strong>"Aam-un Koo-maar"</strong>).
-            <br />I am a Front End Web Developer based in{" "}
+            <br />I am a Full Stack Web Developer based in{" "}
             <em>Hyderabad, India.</em> I am addicted to programming, it's fun to
-            come up with new and creative ideas to build awesome web apps for my
-            clients. But I am not stopping there, I aim to become a full stack
-            developer and also learn machine learning (wish me luck).
+            come up with new and creative ideas to build awesome web apps and solutions for my
+            clients. But I am not stopping there, I aim to become a Data Scientist and a Machine Learning Engineer (wish me luck).
             <br />
             <span className="tac">
               As a result I am contantly learning new things every single day.
@@ -144,19 +143,18 @@ class ToConnectAbout extends Component {
 
           <h2>So What Exactly Do I Do?</h2>
           <p>
-            We already know that I'm a web developer, I build websites and web
-            applications, but does a filmmaker just shoot vidoes? does a painter
-            just apply colors on a canvas?
+            We already know that I am a full stack web developer, I build websites and web
+            applications, I also develop RESTful APIs, I love working with both the Front-End and the Back-End side of Web Applications.
             <br />
             I'm passionate about my work and I can only rest when my clients are
             fully satisfied. My work is 50% communication to ensure you are
-            getting what you asked for. I like my websites <strong>Fast</strong>
+            getting what you asked for. I like my web apps <strong>Fast</strong>
             , <strong>Responsive</strong>, <strong>Dynamic</strong>,{" "}
             <strong>Compatible</strong> and <strong>Up To Date</strong> with the
             technologies.
             <br />
             <strong className="tac">
-              I don't just build websites, I build Experiences.
+              I don't just build Web Apps, I build Experiences.
             </strong>
           </p>
 

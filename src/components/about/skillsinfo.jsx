@@ -147,35 +147,35 @@ class SkillsInfo extends Component {
           <h2>SKILL LEVEL - 75%</h2>
         </div>
         <div className="info__bp3">
-          <h1>REACTJS & VUEJS</h1>
+          <h1>REACTJS</h1>
           <p>
-            JavaScript Frameworks (or Libraries) Every Front End Dev Can't Live
-            Without. Nowadays You Just Can't Build Web Applications Without
-            These.
+            JavaScript Library Every Front End Dev Can't Live
+            Without. Nowadays You Just Can't Build Awesome Web Applications Without
+            This.
           </p>
           <h2>SKILL LEVEL - 85%</h2>
         </div>
         <div className="info__bp4">
-          <h1>REDUX, MOBX & VUEX</h1>
+          <h1>REDUX & MOBX</h1>
           <p>
             JavaScript Libraries Which Help Us Store & Manage The Data Of Our
-            Web Applications. So Combining These With The Front End FrameWorks
+            Web Applications. So Combining These With The Front End FrameWorks,
             You Have The Complete Power To Create Awesome Web Apps.
           </p>
           <h2>SKILL LEVEL - 95%</h2>
         </div>
         <div className="info__bp5">
+          <h1>Node.js & Express</h1>
+          <p>A JavaScript Run-Time Environment And It's Very Popular FrameWork. I Use These To Build RESTful APIs And Just For Back-End Development In General.</p>
+          <h2>SKILL LEVEL - 70%</h2>
+        </div>
+        <div className="info__bp6">
           <h1>GIMP & INKSCAPE</h1>
           <p>
             Open Source Softwares For Image Editing And Making Vector Graphics.
             I Use These To Make UI Designs For Websites And Build Logos.
           </p>
           <h2>SKILL LEVEL - 80%</h2>
-        </div>
-        <div className="info__bp6">
-          <h1>STACK OVERFLOW</h1>
-          <p>Delete Stack Overflow and you have a true apocalypse.</p>
-          <h2>SKILL LEVEL - 100%</h2>
         </div>
       </div>
     );
