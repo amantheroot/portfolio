@@ -9,8 +9,11 @@
   }
   .mywork {
     text-align: center;
-    margin: 200px;
-    font-size: 3rem;
+    margin: 200px auto;
+    font-size: 3vw;
+    @media only screen and (max-width: $BreakingPoint) {
+      font-size: 4vw;
+    }
   }
   .portfolio__contact {
     @extend %pagefooter;
