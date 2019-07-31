@@ -49,7 +49,7 @@
     color: darken($Color1, 10);
     border-color: darken($Color1, 10);
     &:hover {
-      color: white;
+      color: $Color3;
     }
   }
 }
