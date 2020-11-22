@@ -6,9 +6,9 @@ import { PageTurn, FirstPageLoaded } from "../../store/actions/pageactions";
 
 import Styles from "../../styles/partials/_variables.scss";
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
-    store: state
+    store: state,
   };
 };
 
@@ -141,10 +141,10 @@ class ToConnectNavigation extends Component {
         </nav>
 
         <div className="links">
-          <NavLink to="/" />
-          <NavLink to="/about" />
-          <NavLink to="/portfolio" />
-          <NavLink to="/contact" />
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/portfolio">Portfolio</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </div>
       </div>
     );
