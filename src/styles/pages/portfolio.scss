@@ -7,6 +7,10 @@
   & > p {
     text-align: center;
   }
+  a {
+    color: $Color1;
+    text-decoration: none;
+  }
   .mywork {
     display: flex;
     flex-direction: column;

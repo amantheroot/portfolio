@@ -19,11 +19,61 @@ class Portfolio extends Component {
         <h1>MY WORK</h1>
         <p>(and what you're actually here for...)</p>
         <div className="mywork">
-          <WorkCard />
-          <WorkCard />
-          <WorkCard />
-          <WorkCard />
-          <WorkCard />
+          <a
+            href="https://sandbox.rentastico.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <WorkCard
+              company="Rentastico (OPC) Pvt Ltd"
+              duration="2020 Jan - Present"
+              cover="https://miro.medium.com/max/3000/1*MI686k5sDQrISBM6L8pf5A.jpeg"
+              description={
+                <>
+                  <p>
+                    Helping Rentastico develop and launch 3 PWA E-Commerce Full
+                    Stack Web Applications (MEAN Stack) and a Live Stream
+                    E-Commerce Solution using Kurento Media Server & MEAN Stack.
+                  </p>
+                  <ul>
+                    <li>
+                      Technologies Used: Angular 10, Ionic, NodeJS, Express.js,
+                      JWT, MongoDB, Elasticsearch, Kurento (WebRTC)
+                    </li>
+                    <li>
+                      Developed a full stack live stream e-commerce solution
+                      using WebRTC that performs <em>50%</em> faster than
+                      existing live stream solutions.
+                    </li>
+                  </ul>
+                </>
+              }
+            />
+          </a>
+          <a href="https://houp.app" target="_blank" rel="noopener noreferrer">
+            <WorkCard />
+          </a>
+          <a
+            href="https://www.innomatics.in"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <WorkCard />
+          </a>
+          <a
+            href="https://priceless-ride-41f4fc.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <WorkCard />
+          </a>
+          <a
+            href="https://elegant-villani-bb0afe.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <WorkCard />
+          </a>
         </div>
         <div className="portfolio__contact">
           <div>
