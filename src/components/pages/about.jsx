@@ -183,7 +183,7 @@ class ToConnectAbout extends Component {
           </div> */}
         </div>
 
-        <h2>Technologies I Use...</h2>
+        <h2>Technologies I'm Skilled At...</h2>
         <Skills brainloaded={this.props.store.brainloaded} />
         <a title="Go Check My Resume!" href="https://amantheroot.github.io/resume/" target="_blank" rel="noopener noreferrer"><button className="about__resume">My Resume</button></a>
         <div className="about__footer">

@@ -31,7 +31,7 @@ class SkillsInfo extends Component {
       }
       [...this.refs.info.childNodes]
         .filter((val, id) => id > 2)
-        .forEach(inf => (inf.style.opacity = opac));
+        .forEach((inf) => (inf.style.opacity = opac));
     }
   };
   componentWillUnmount() {
@@ -49,15 +49,15 @@ class SkillsInfo extends Component {
 
     let infos = [...this.refs.info.childNodes]
       .filter((val, id) => id > 2)
-      .map(inf => inf.getClientRects()[0]);
+      .map((inf) => inf.getClientRects()[0]);
 
     let centres = [...[...this.refs.info.childNodes][0].childNodes]
       .filter((v, id) => id < 6)
-      .map(ctr => ctr.getClientRects()[0]);
+      .map((ctr) => ctr.getClientRects()[0]);
 
     let pseudocentres = [...[...this.refs.info.childNodes][0].childNodes]
       .filter((v, id) => id > 5)
-      .map(ctr => ctr.getClientRects()[0]);
+      .map((ctr) => ctr.getClientRects()[0]);
 
     let ow = 10;
 
@@ -131,51 +131,58 @@ class SkillsInfo extends Component {
         <canvas ref="info__canvas" className="info__canvas" />
         <div className="info__empty" />
         <div className="info__bp1">
-          <h1>HTML, CSS & JS</h1>
+          <h1>React/Angular</h1>
           <p>
-            Basic Building Blocks Of A Website. Every Web Developer Is Expected
-            To Know These.
-          </p>
-          <h2>SKILL LEVEL - 90%</h2>
-        </div>
-        <div className="info__bp2">
-          <h1>SASS & BOOTSTRAP</h1>
-          <p>
-            Tools For CSS To Add More Functionality To It. Makes My Life A
-            Little Easier.
+            Javascript libraries/frameworks every front end dev can't live
+            without. Nowadays, you just can't build awesome web applications
+            without these.
           </p>
           <h2>SKILL LEVEL - 75%</h2>
         </div>
-        <div className="info__bp3">
-          <h1>REACTJS</h1>
+        <div className="info__bp2">
+          <h1>Next.js</h1>
           <p>
-            JavaScript Library Every Front End Dev Can't Live
-            Without. Nowadays You Just Can't Build Awesome Web Applications Without
-            This.
+            The best react framework out there, that helps me build robust
+            static PWAs with ease. Really great for developer experience &amp;
+            performance of the web application.
           </p>
           <h2>SKILL LEVEL - 85%</h2>
         </div>
-        <div className="info__bp4">
-          <h1>REDUX & MOBX</h1>
+        <div className="info__bp3">
+          <h1>Node.js</h1>
           <p>
-            JavaScript Libraries Which Help Us Store & Manage The Data Of Our
-            Web Applications. So Combining These With The Front End FrameWorks,
-            You Have The Complete Power To Create Awesome Web Apps.
+            One of the most versatile &amp; reliable back end languages that
+            every back end dev should know about. My choice for building agile
+            &amp; robust API services.
+          </p>
+          <h2>SKILL LEVEL - 90%</h2>
+        </div>
+        <div className="info__bp4">
+          <h1>MongoDB</h1>
+          <p>
+            A very popular database management system for storing, managing
+            &amp; maintaining the precious data of any application. Really
+            versatile &amp; convenient in it's development experience.
+          </p>
+          <h2>SKILL LEVEL - 80%</h2>
+        </div>
+        <div className="info__bp5">
+          <h1>RESTful APIs</h1>
+          <p>
+            A software architectural style for building interoperable API
+            Services. A must follow for building any kind of full stack
+            application.
           </p>
           <h2>SKILL LEVEL - 95%</h2>
         </div>
-        <div className="info__bp5">
-          <h1>Node.js & Express</h1>
-          <p>A JavaScript Run-Time Environment And It's Very Popular FrameWork. I Use These To Build RESTful APIs And Just For Back-End Development In General.</p>
-          <h2>SKILL LEVEL - 70%</h2>
-        </div>
         <div className="info__bp6">
-          <h1>GIMP & INKSCAPE</h1>
+          <h1>Typescript</h1>
           <p>
-            Open Source Softwares For Image Editing And Making Vector Graphics.
-            I Use These To Make UI Designs For Websites And Build Logos.
+            A superset of javascript for making your apps strongly typed &amp;
+            less prone to bugs. My go-to solution for debugging when working on
+            any project.
           </p>
-          <h2>SKILL LEVEL - 80%</h2>
+          <h2>SKILL LEVEL - 90%</h2>
         </div>
       </div>
     );
