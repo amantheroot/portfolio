@@ -5,6 +5,12 @@ import { Helmet } from "react-helmet";
 import Footer from "../layout/footer";
 import WorkCard from "../portfolio/workcard";
 
+import Rentastico from "../../assets/images/rentastico.jpg";
+import Innomatics from "../../assets/images/innomatics.jpg";
+import Houp from "../../assets/images/houp.jpg";
+import PizzaXprs from "../../assets/images/pizzaxprs.jpg";
+import TransOx from "../../assets/images/transox.jpg";
+
 class Portfolio extends Component {
   render() {
     return (
@@ -27,7 +33,7 @@ class Portfolio extends Component {
             <WorkCard
               company="Rentastico (OPC) Pvt Ltd"
               duration="2020 Jan - Present"
-              cover="https://miro.medium.com/max/3000/1*MI686k5sDQrISBM6L8pf5A.jpeg"
+              cover={Rentastico}
               description={
                 <>
                   <p>
@@ -59,7 +65,7 @@ class Portfolio extends Component {
             <WorkCard
               company="Innomatics Research Labs"
               duration="2020 Oct - Present"
-              cover="https://miro.medium.com/max/3000/1*MI686k5sDQrISBM6L8pf5A.jpeg"
+              cover={Innomatics}
               description={
                 <>
                   <p>
@@ -90,7 +96,7 @@ class Portfolio extends Component {
             <WorkCard
               company="Houp"
               duration="2020 Jun - 2020 Nov"
-              cover="https://miro.medium.com/max/3000/1*MI686k5sDQrISBM6L8pf5A.jpeg"
+              cover={Houp}
               description={
                 <>
                   <p>
@@ -119,7 +125,7 @@ class Portfolio extends Component {
             <WorkCard
               company="PizzaXprs"
               duration="2019 Jan"
-              cover="https://miro.medium.com/max/3000/1*MI686k5sDQrISBM6L8pf5A.jpeg"
+              cover={PizzaXprs}
               description={
                 <>
                   <p>
@@ -155,7 +161,7 @@ class Portfolio extends Component {
             <WorkCard
               company="TransOx"
               duration="2019 Sep"
-              cover="https://miro.medium.com/max/3000/1*MI686k5sDQrISBM6L8pf5A.jpeg"
+              cover={TransOx}
               description={
                 <>
                   <p>
