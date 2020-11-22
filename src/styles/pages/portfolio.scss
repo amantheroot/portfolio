@@ -4,16 +4,15 @@
   & > h1 {
     @extend %pageheading;
   }
-  p {
+  & > p {
     text-align: center;
   }
   .mywork {
-    text-align: center;
-    margin: 200px auto;
-    font-size: 3vw;
-    @media only screen and (max-width: $BreakingPoint) {
-      font-size: 4vw;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
   }
   .portfolio__contact {
     @extend %pagefooter;

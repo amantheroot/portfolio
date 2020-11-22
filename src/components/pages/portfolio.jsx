@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 
 import Footer from "../layout/footer";
+import WorkCard from "../portfolio/workcard";
 
 class Portfolio extends Component {
   render() {
@@ -18,7 +19,11 @@ class Portfolio extends Component {
         <h1>MY WORK</h1>
         <p>(and what you're actually here for...)</p>
         <div className="mywork">
-          <h1>Coming Soon...</h1>
+          <WorkCard />
+          <WorkCard />
+          <WorkCard />
+          <WorkCard />
+          <WorkCard />
         </div>
         <div className="portfolio__contact">
           <div>
