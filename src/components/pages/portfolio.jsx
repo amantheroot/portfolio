@@ -50,29 +50,87 @@ class Portfolio extends Component {
               }
             />
           </a>
-          <a href="https://houp.app" target="_blank" rel="noopener noreferrer">
-            <WorkCard />
-          </a>
           <a
             href="https://www.innomatics.in"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <WorkCard />
+            <WorkCard
+              company="Innomatics Research Labs"
+              duration="2020 Oct - Present"
+              cover="https://miro.medium.com/max/3000/1*MI686k5sDQrISBM6L8pf5A.jpeg"
+              description={
+                <>
+                  <p>
+                    Developed a fully fledged headless CMS along with an admin
+                    dashboard &amp; a viewing engine that reduced the time for
+                    content management process by <em>40%</em> over existing CMS
+                    solutions.
+                  </p>
+                  <ul>
+                    <li>
+                      Technologies Used: Next.js, Ant Design, Express.js, JWT,
+                      MongoDB, NodeJS
+                    </li>
+                    <li>
+                      Implemented a CRM Architecture along with a role
+                      management system for enhanced authentication.
+                    </li>
+                    <li>
+                      Developed better SEO manipulation for the CMS that
+                      improved SEO performance by <em>35%</em>.
+                    </li>
+                  </ul>
+                </>
+              }
+            />
+          </a>
+          <a href="https://houp.app" target="_blank" rel="noopener noreferrer">
+            <WorkCard
+              company="Houp"
+              duration="2020 Jun - 2020 Nov"
+              cover="https://miro.medium.com/max/3000/1*MI686k5sDQrISBM6L8pf5A.jpeg"
+              description={
+                <>
+                  <p>
+                    Developed &amp; launched a fully featured full stack social
+                    media networking Progressive Web App for Houp with a
+                    <em>perfect</em> score on Google Lighthouse.
+                  </p>
+                  <ul>
+                    <li>
+                      Technologies Used: Next.js, Express.js, JWT, MJML, MongoDB
+                    </li>
+                    <li>
+                      Implemented all PWA features like service workers, cache
+                      storage, etc. for better user experience.
+                    </li>
+                  </ul>
+                </>
+              }
+            />
           </a>
           <a
             href="https://priceless-ride-41f4fc.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <WorkCard />
+            <WorkCard
+              company="PizzaXprs"
+              duration="2019 Jan"
+              cover="https://miro.medium.com/max/3000/1*MI686k5sDQrISBM6L8pf5A.jpeg"
+            />
           </a>
           <a
             href="https://elegant-villani-bb0afe.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <WorkCard />
+            <WorkCard
+              company="TransOx"
+              duration="2019 Sep"
+              cover="https://miro.medium.com/max/3000/1*MI686k5sDQrISBM6L8pf5A.jpeg"
+            />
           </a>
         </div>
         <div className="portfolio__contact">
