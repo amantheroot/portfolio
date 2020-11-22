@@ -33,7 +33,8 @@ class Portfolio extends Component {
                   <p>
                     Helping Rentastico develop and launch 3 PWA E-Commerce Full
                     Stack Web Applications (MEAN Stack) and a Live Stream
-                    E-Commerce Solution using Kurento Media Server & MEAN Stack.
+                    E-Commerce Solution using Kurento Media Server &amp; MEAN
+                    Stack.
                   </p>
                   <ul>
                     <li>
@@ -119,6 +120,31 @@ class Portfolio extends Component {
               company="PizzaXprs"
               duration="2019 Jan"
               cover="https://miro.medium.com/max/3000/1*MI686k5sDQrISBM6L8pf5A.jpeg"
+              description={
+                <>
+                  <p>
+                    Designed &amp; Created an SEO optimized static HTML/CSS/JS
+                    webpage for a local pizza shop, that boosted their sales by{" "}
+                    <em>200%</em>. Scored perfectly on various online audits.
+                  </p>
+                  <ul>
+                    <li>Technologies Used: HTML, CSS, JS</li>
+                    <li>
+                      Optimized SEO to score <em>100</em> in Google Lighthouse
+                      Audits.
+                    </li>
+                    <li>
+                      Implemented e-commerce links to order instantly from the
+                      webpage that resulted in a boost of <em>200%</em> in
+                      sales.
+                    </li>
+                    <li>
+                      Designed a really sophisticated logo for the business that
+                      was also printed on the physical pizza boxes.
+                    </li>
+                  </ul>
+                </>
+              }
             />
           </a>
           <a
@@ -130,6 +156,26 @@ class Portfolio extends Component {
               company="TransOx"
               duration="2019 Sep"
               cover="https://miro.medium.com/max/3000/1*MI686k5sDQrISBM6L8pf5A.jpeg"
+              description={
+                <>
+                  <p>
+                    Developed &amp; designed an SEO optimized static HTML/CSS/JS
+                    webpage for a local oxygen supply business, that resulted in
+                    a boost in their sales by <em>150%</em>.
+                  </p>
+                  <ul>
+                    <li>Technologies Used: HTML, CSS, JS</li>
+                    <li>
+                      <em>Perfect</em> score in Google Lighthouse for
+                      Performance, Best Practices, SEO &amp; Accessibility.
+                    </li>
+                    <li>
+                      Optimized SEO to result in a higher ranking in Google's
+                      search index.
+                    </li>
+                  </ul>
+                </>
+              }
             />
           </a>
         </div>
