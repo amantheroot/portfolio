@@ -83,7 +83,7 @@ function registerValidSW(swUrl, config) {
               // It's the perfect time to display a
               // "Content is cached for offline use." message.
               console.log("Content is cached for offline use.");
-              alert("You Can View This Site Offline!");
+              // alert("You Can View This Site Offline!");
 
               // Execute callback
               if (config && config.onSuccess) {

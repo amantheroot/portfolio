@@ -27,4 +27,6 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-serviceWorker.register();
+if (process.env.SERVICE_WORKER_REGISTER !== "false") {
+  serviceWorker.register();
+}
