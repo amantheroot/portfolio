@@ -16,7 +16,7 @@
     "ignore-styles": "^5.0.1",
     "md5-file": "^4.0.0",
     "morgan": "^1.9.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-frontload": "^1.0.3",
