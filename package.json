@@ -43,7 +43,7 @@
   "bugs": {
     "url": "https://github.com/amantheroot/portfolio/issues"
   },
-  "homepage": "https://amantheroot.github.io/portfolio",
+  "homepage": "https://amantheroot.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
